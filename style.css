@@ -1,0 +1,293 @@
+*{
+margin: 0;
+padding: 0;
+}
+.navigation{
+    background-image: linear-gradient(dodgerblue,rgb(15, 67, 118));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation > ul{
+    display: flex;
+    margin-right: 50px;
+
+}
+.navigation > ul >li{
+    list-style: none;
+    margin: 0px 5px;
+    margin-left: -5px;
+    padding: 15px 0px;
+   
+   
+}
+.navigation > ul > li > a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    border-right: 1px solid white;
+    padding: 15px 20px;
+    transition: 1s;
+    
+}
+.navigation > ul >li:first-child >a{
+    border-left: 1px solid white;
+}
+.logo > h2{
+    color:white;
+    margin-left: 50px;
+}
+.logo > h2 > .firstletter{
+   color:yellow;
+   font-size: 30px;
+}
+.navigation > ul > li:hover > a{
+   color:rgb(110, 167, 224);
+   background-color: rgb(49, 95, 141);
+
+}
+
+/* dropdownmenu */
+.dropdownmenu{
+    opacity: 0;
+    visibility: hidden;
+    background-color: dodgerblue;
+    text-align: center;
+    margin-top: 15px;
+    width: 190px;
+    position: absolute;
+    box-shadow: 10px 10px 8px black;
+    transition: 0.5s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.dropdownmenu > li{
+    list-style: none;
+    padding: 15px 0px;
+    border-bottom: 1px solid white;   
+}
+.dropdownmenu > li:first-child{
+    border-top: 1px solid white;
+}
+.dropdownmenu >li >a{
+    text-decoration: none;
+    color:white;
+
+}
+.dropdownmenu > li:hover{
+     background-color: rgb(27, 84, 141);
+     box-shadow: 5px 5px 4px white;
+}
+.navigation > ul > li:hover > .dropdownmenu{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+
+/* Hero__area__section start */
+
+.hero__section{
+    background-image: linear-gradient(rgba(102, 80, 80, 0.286),rgba(29, 26, 26, 0.84)),   url("image/Jaton1.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 100vh;
+}
+.main__area{
+   padding-top: 180px;
+   color:white;
+}
+.main__area > h1{
+    background-color: #064b8f6d;
+    width:40%;
+    margin: 20px auto;
+    font-size: 40px;
+    padding: 20px;
+    font-style: italic;
+    border-radius: 10px;
+}
+
+.main__area > button{
+    font-size: 20px;
+    background-color: rgba(30, 143, 255, 0.363);
+    padding: 15px 25px;
+    color:white;
+    border-radius: 30px;
+    border:3px solid green;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.main__area > button:hover{
+    background-color:rgba(30, 143, 255, 0.019);
+    cursor: pointer;
+}
+.main__area > h4{
+  font-size: 20px;
+  color:rgb(145, 122, 39);
+}
+.main__area > h5{
+    font-size: 20px;
+    color: rgb(181, 55, 55); 
+}
+.icon > a{
+    color:white;
+}
+.icon > a > i{
+    height: 40px;
+    width: 40px;
+    line-height: 1.4;
+    background-color:rgb(46, 67, 182);
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    border:2px solid green;
+    margin:10px 5px ;
+    transition: 1s;
+}
+.icon > a > i:hover{
+    background-color: rgba(0, 0, 0, 0.066);
+    border:2px solid red;
+    transform: rotate(360deg);
+}
+
+/* main part has started */
+.first-section{
+    display: flex;
+    width: 1000px;
+    margin: 50px auto;
+    padding:30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.first-child{
+    width: 300px;
+    text-align: center;
+    font-size: 20px;
+    padding: 25px 10px;
+    transition: 0.5s;
+}
+.first-child > i{
+    font-size: 50px;
+}
+.first-child > h2{
+    margin: 20px;
+}
+.first-child:hover{
+    box-shadow: 5px 5px 8px black;
+}
+
+/* second section */
+
+.Area > h2{
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+}
+.Area > h2::after {
+    content: " ";
+    width: 105px;
+    height: 5px;
+    background-color: #a81111;
+    position: absolute;
+    top: 50px;
+    left: 755px;
+}
+
+.sideTag{
+    display: flex;
+    width: 1000px;
+    margin:40px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.sameitem{
+    width: 500px;
+}
+.sameitem >h2{
+    margin: 20px 0px;
+    font-size:30px;
+}
+.sameitem > h3{
+    color:#a81111;
+}
+.sameitem > a{
+    text-decoration: none;
+    background-color: #a81111;
+    color:white;
+    padding:15px 30px;
+    font-size: 30px;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.sameitem > a:hover{
+    background-color: hsl(0, 70%, 21%);
+}
+
+/* third section */
+
+.thirdArea{
+    background-color: #FAFAFA;
+    padding:20px 0;
+}
+
+.third__area{
+ width: 1000px;
+ margin:40px auto;
+}
+
+.socity{
+    text-align: center;
+    margin:40px;
+}
+.socity > h2{
+    font-size: 30px;
+}
+.my__Future{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-gap:20px;
+}
+.plane{
+   background-color: lightblue;
+   text-align: center;
+   padding:30px 0px;
+   transition:0.5s;
+}
+.plane > a> i{
+    font-size: 35px;
+    color:#a81111;
+}
+.plane > h3{
+    margin:15px 0;
+}
+.plane:hover{
+    background-color: #80c6dd;
+    cursor:pointer;
+    box-shadow: 4px 4px 6px rgb(38, 91, 109);
+} 
+
+/* fourth sesion  */
+
+
+.primary{
+    text-align: center;
+    font-size: 20px;
+    padding:30px 0;
+}
+
+.card{
+    display: flex;
+}
+.mixcard{
+    width:300px;
+}
+.three-card{
+    width: 300px;
+    }
+.three-card > img{
+    max-width: 100%;
+}
