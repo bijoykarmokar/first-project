@@ -406,7 +406,7 @@ padding: 0;
 #parallax1{
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Black gradient with 50% opacity */
-    url("/image/parallax.jpg");
+    url("./image/parallax.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
